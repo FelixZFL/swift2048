@@ -46,12 +46,12 @@ class MainViewController: UIViewController {
         self.view.backgroundColor = UIColor.purple
         
         let btn = UIButton.init(frame: CGRect.init(x: 80, y: 80, width: 100, height: 30))
-        btn.setTitle("添加数字", for: UIControlState.normal)
+        btn.setTitle("添加数字", for: UIControl.State.normal)
         btn.backgroundColor = UIColor.orange
-        btn.setTitleColor(UIColor.white, for: UIControlState.normal)
-        btn.setImage(UIImage.init(named: "123.gif"), for: UIControlState.normal)
+        btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        btn.setImage(UIImage.init(named: "123.gif"), for: UIControl.State.normal)
         self.view.addSubview(btn)
-        btn.addTarget(self, action: #selector(addNumber), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(addNumber), for: UIControl.Event.touchUpInside)
         
         var x:CGFloat = 30
         var y:CGFloat = 150
@@ -123,11 +123,11 @@ class MainViewController: UIViewController {
         
         let tile = TileView.init(pos: CGPoint.init(x: x, y: y), width: width, value: value)
         self.view.addSubview(tile)
-        self.view.bringSubview(toFront: tile)
+        self.view.bringSubviewToFront(tile)
      
         tile.layer.setAffineTransform(CGAffineTransform.init(scaleX: 0.1, y: 0.1))
         
-        UIView.animate(withDuration: 0.3, delay: 0.1, options: UIViewAnimationOptions.curveEaseInOut, animations: { 
+        UIView.animate(withDuration: 0.3, delay: 0.1, options: UIView.AnimationOptions.curveEaseInOut, animations: {
                 () -> Void in
                     tile.layer.setAffineTransform(CGAffineTransform.init(scaleX: 1, y: 1))
         }) { (finished:Bool) in

@@ -15,13 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func startGames(_ sender: UIButton) {
-        let alert = UIAlertController.init(title: "开始游戏", message: "马上开始游戏", preferredStyle: UIAlertControllerStyle.alert)
-        let okAction = UIAlertAction.init(title: "确定", style: UIAlertActionStyle.default) { (nil) in
+        let alert = UIAlertController.init(title: "开始游戏", message: "马上开始游戏", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction.init(title: "确定", style: UIAlertAction.Style.default) { (nil) in
             
             self.present(MainTabViewController.init(), animated: true, completion: nil)
             print("fdsjfjdskl")
         }
-        let cancelAction = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
+        let cancelAction = UIAlertAction.init(title: "取消", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(okAction)
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)

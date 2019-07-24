@@ -130,7 +130,7 @@
 				TargetAttributes = {
 					40C1175A1DAB9F2C007F129A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = J33FYRX784;
+						DevelopmentTeam = 3U83R3WVCJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,6 +140,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -299,12 +300,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J33FYRX784;
+				DEVELOPMENT_TEAM = 3U83R3WVCJ;
 				INFOPLIST_FILE = Swift2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felix.Swift2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -312,12 +313,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J33FYRX784;
+				DEVELOPMENT_TEAM = 3U83R3WVCJ;
 				INFOPLIST_FILE = Swift2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felix.Swift2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
